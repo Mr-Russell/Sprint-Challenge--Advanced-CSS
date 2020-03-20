@@ -58,6 +58,15 @@
       }
 
       .btn {
+        width: 30%;
+        text-align: center;
+        font-size: 1.8rem;
+        // font-weight: bold;
+        .btn-style (@porcelain, @btn-bg-color);
+
+          &:hover {
+            .btn-style (@btn-bg-color, @porcelain);
+          }
       }
     }
 
