@@ -186,13 +186,30 @@ p {
 }
 @media ((max-width:500px)) {
   .navigation nav .links {
-    width: 80%;
+    width: 85%;
+    margin-top: 5%;
   }
 }
 .navigation nav .links a {
   font-size: 1.6rem;
   color: #454A59;
   text-decoration: none;
+}
+@keyframes navBar {
+  from {
+    color: #454A59;
+  }
+  to {
+    color: darkorange;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+.navigation nav .links a:hover {
+  animation-name: navBar;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 footer {
   color: #22283B;

@@ -18,13 +18,32 @@
                     .flex-center();
 
                     @media (@phone) {
-                        width: 80%;
+                        width: 85%;
+                        margin-top:5%;
                     }
 
                         a {
                             font-size: 1.6rem;
                             color: @river-bend;
                             text-decoration: none;
+
+                            @keyframes navBar {
+                                from {
+                                    color:@river-bend;
+                                }
+                                to {
+                                    color: darkorange;
+                                    font-weight: bold;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                                &:hover {
+                                    animation-name: navBar;
+                                    animation-duration: 1200ms;
+                                    animation-timing-function: linear;
+                                    animation-fill-mode: forwards;
+                                }
                         }
                 }
         }// Closes .nav
