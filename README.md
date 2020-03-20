@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Responsive webistes will constantly adjust their size based on the size of the browser window. The layout is flud, so when a user resizes their browser window, the webpage will resize it's width to adjust to the width of the screen.
+
+    Adaptive websites have multiple fixed layout sizes. Resizing the browser has no ipact on the design. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    "Mobile first" means desiginig your webpage to be optimized for mobile browser widths, then adjusting the webiste to also be more readable in larger formats. This method typically uses the "min-width" CSS property when scaling up.
+
+    "Desktop first" means desiging your webpage to be optimized for desktop browsers, then adjusting the website to also be more readable in smaller formats. This method typically uses the "max-width" CSS property when scaling down.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Changing the HTML font size to 62.5% converts the standard font size to 10 pixels. This makes conversions easier for developers since this would make 1rem=10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing reformats your code so it is easier for developers to use and interpret, while simultaneously creating code that a web browser can still read. When using preprocessing, you can organize your code in nested elements. Doing this, it is easier for developers to decipher the structure of a webpage because they can see how the elements are related to eachother. Instead of having to scroll through thousands of lines of CSS to figure out what styles are related to eachother, with preprocessing a developer can clearly see these relationships based on the nesting of each property.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is the organization. It was really frustrating to try and remember how I organized my code in basically one giant column. With nesting and imports, I can almost instantly deduce where the code I need is saved.
+
+    I'm still having a little trouble with parametric mixins. It is definitely a useful tool, but it is difficult for my brain to manage the structure and different variables all at the same time.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
