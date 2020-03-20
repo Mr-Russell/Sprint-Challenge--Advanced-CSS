@@ -94,14 +94,29 @@
         // font-weight: bold;
         .btn-style (@porcelain, @btn-bg-color);
 
+        @keyframes btnHover {
+          from {
+              color: @porcelain; 
+              background-color: @btn-bg-color;
+          }
+          to {
+              color: @btn-bg-color;
+              background-color: @porcelain;
+              font-size: 2.2rem;
+          }
+      }
+
         @media (@phone){
           width: 100%;
           padding: 5% 0;
         }
 
           &:hover {
-            .btn-style (@btn-bg-color, @porcelain);
-
+            animation-name: btnHover;
+            animation-duration: 800ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            
             @media (@phone){
               padding: 5% 0;
             }

@@ -201,13 +201,12 @@ p {
   }
   to {
     color: darkorange;
-    font-weight: bold;
-    text-decoration: underline;
+    font-size: 2rem;
   }
 }
 .navigation nav .links a:hover {
   animation-name: navBar;
-  animation-duration: 1200ms;
+  animation-duration: 500ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -304,6 +303,17 @@ footer {
   border: 1px solid #22283A;
   border-radius: 5px;
 }
+@keyframes btnHover {
+  from {
+    color: #F6F7F8;
+    background-color: #22283A;
+  }
+  to {
+    color: #22283A;
+    background-color: #F6F7F8;
+    font-size: 2.2rem;
+  }
+}
 @media ((max-width:500px)) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -311,11 +321,10 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  color: #22283A;
-  background-color: #F6F7F8;
-  padding: 3% 5%;
-  border: 1px solid #22283A;
-  border-radius: 5px;
+  animation-name: btnHover;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 @media ((max-width:500px)) {
   .home .walk .walk-text .btn:hover {
