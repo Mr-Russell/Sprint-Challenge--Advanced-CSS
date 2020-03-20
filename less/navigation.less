@@ -1,1 +1,49 @@
 // Navigation code here
+.navigation {
+    width:100%;
+    background-color: @wild-sand;
+    padding: 1% 0;
+    border-bottom: 1px solid @sea-shell;
+
+        nav {
+            max-width: 800px;
+            .flex-column();
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+                .links {
+                    width:50%;
+                    margin-top: 2%;
+                    .flex-center();
+
+                    @media (@phone) {
+                        width: 85%;
+                        margin-top:5%;
+                    }
+
+                        a {
+                            font-size: 1.6rem;
+                            color: @river-bend;
+                            text-decoration: none;
+
+                            @keyframes navBar {
+                                from {
+                                    color:@river-bend;
+                                }
+                                to {
+                                    color: darkorange;
+                                    font-size: 2rem;
+                                }
+                            }
+
+                                &:hover {
+                                    animation-name: navBar;
+                                    animation-duration: 500ms;
+                                    animation-timing-function: linear;
+                                    animation-fill-mode: forwards;
+                                }
+                        }
+                }
+        }// Closes .nav
+}// Closes .navigation

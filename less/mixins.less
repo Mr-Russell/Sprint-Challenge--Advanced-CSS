@@ -1,1 +1,20 @@
 // Mixins Here
+
+.btn-style(@txtColor, @BGcolor) {
+    color: @txtColor;
+    background-color: @BGcolor;
+    padding: 3% 5%;
+    border: 1px solid @btn-bg-color;
+    border-radius: 5px;
+}
+
+.flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center(){
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
